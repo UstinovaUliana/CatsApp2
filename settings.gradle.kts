@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CatsApp2"
 include(":app")
+include(":cats-api")

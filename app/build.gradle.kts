@@ -18,6 +18,9 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        buildConfigField("String","CATS_API_KEY","\"live_O2SEkNwEU2ctSoKK7GtjHDUSqBUKKMgOGwSOnRwBcH1ngxEw0pF6d1jGDEZa7as5\"")
+        buildConfigField("String","CATS_API_BASE_URL","\"https://api.thecatapi.com/v1/\"")
     }
 
     buildTypes {
@@ -38,6 +41,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
