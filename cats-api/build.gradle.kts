@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -44,5 +45,5 @@ dependencies {
     implementation(libs.retorfit)
     implementation(libs.retrofit.kotlinx.serialization.converter)
     implementation(libs.retrofit.adapters.result)
-    implementation(libs.kotlinx.serialization.json)
+    api(libs.kotlinx.serialization.json)
 }
